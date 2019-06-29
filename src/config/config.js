@@ -1,15 +1,16 @@
 export default {
+  parent: 'game',
   type: Phaser.AUTO,
-  parent: "es6-template",
-  width: 640,
-  height: 512,
+  parent: "Game",
+  width: 700,
+  height: 400,
   pixelArt: true,
   roundPixels: true,
   physics: {
     default: 'arcade',
     arcade: {
       debug: false,
-      gravity: { y: 0 }
+      // gravity: { y: 1900 }
     }
   }
 };

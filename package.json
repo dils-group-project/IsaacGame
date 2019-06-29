@@ -22,7 +22,8 @@
     "url": "https://github.com/theman0123/phaser3-es6-template/issues"
   },
   "dependencies": {
-    "phaser": "^3.15.1"
+    "axios": "^0.19.0",
+    "phaser": "^3.17.0"
   },
   "devDependencies": {
     "clean-webpack-plugin": "^0.1.19",
@@ -35,7 +36,7 @@
     "raw-loader": "^0.5.1",
     "style-loader": "^0.23.1",
     "url-loader": "^1.1.2",
-    "webpack": "^4.22.0",
+    "webpack": "^4.33.0",
     "webpack-dev-server": "^3.1.14",
     "webpack-merge": "^4.1.4"
   }

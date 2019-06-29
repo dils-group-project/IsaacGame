@@ -102,12 +102,29 @@ export default class PreloaderScene extends Phaser.Scene {
 
   loadAssets() {
     // load assets for game
+    this.load.spritesheet('explosion', 'assets/splosion.png', { frameWidth: 64, frameHeight: 64 })
+    this.load.spritesheet('ship' , 'assets/spritesheet1.png' , { frameWidth: 64, frameHeight: 54 })
+    this.load.spritesheet('shot', 'assets/shottrue.png', { frameWidth: 30, frameHeight: 20 })
+    this.load.spritesheet('pillarTall', 'assets/rock pillar tall.png', {frameWidth: 64, frameHeight: 150} )
+    this.load.spritesheet('pillarTallInverted', 'assets/rock pillar tall inverted.png', {frameWidth: 64, frameHeight: 150} )
+    this.load.spritesheet('coin', 'assets/boulder.png', { frameWidth: 64, frameHeight: 64 })
+    this.load.spritesheet('boulder', 'assets/boulder-nb.png', { frameWidth: 64, frameHeight: 64 })
+    this.load.spritesheet('boulder-explosion', 'assets/boulder-explode-1.png', {frameWidth: 64, frameHeight: 64})
+    this.load.spritesheet('boulder-break', 'assets/boulder-break.png', {frameWidth: 64, frameHeight: 64})
+    this.load.spritesheet('game-over', 'assets/game-over-1.png', {frameWidth: 700, frameHeight: 125})
+    this.load.spritesheet('click-restart', 'assets/click-restart.png', {frameWidth: 150, frameHeight: 100})
+    this.load.image('score', 'assets/score.png')
+    this.load.image('fore', 'assets/bgfore.png')
+    this.load.image('near', 'assets/bgnear.png')
+    this.load.image('far', 'assets/bgfar.png')
+    this.load.image('furthest', 'assets/bgfurthest.png')
+    this.load.image('pillar', 'assets/testpillar.png')
   }
 
   ready() {
     this.readyCount++;
     if (this.readyCount === 2) {
-      this.scene.start("Title");
+      this.scene.start("Game");
     }
   }
 }
