@@ -22,7 +22,7 @@
     "url": "https://github.com/theman0123/phaser3-es6-template/issues"
   },
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "phaser": "^3.17.0"
   },
   "devDependencies": {
